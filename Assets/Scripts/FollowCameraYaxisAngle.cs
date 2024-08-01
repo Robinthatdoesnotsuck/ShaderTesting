@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class FollowCameraYaxisAngle : MonoBehaviour
 {
-    [SerializeField]
-    [CanBeNull] private Camera cameraToFollow;
+    
+    private Camera cameraToFollow;
     public float smooth = 5.0f;
     // Start is called before the first frame update
     void Start()
