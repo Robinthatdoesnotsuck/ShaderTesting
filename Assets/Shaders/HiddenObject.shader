@@ -1,4 +1,4 @@
-Shader "Unlit/StencilMask"
+Shader "Unlit/HiddenObject"
 {
     Properties
     {
@@ -8,13 +8,10 @@ Shader "Unlit/StencilMask"
     {
         Tags { "RenderType"="Opaque" }
         LOD 100
-        ColorMask 0
-        ZWrite Off
         Stencil
         {
             ref 1
-            comp Always
-            pass replace
+            comp equal
         }
         Pass
         {
